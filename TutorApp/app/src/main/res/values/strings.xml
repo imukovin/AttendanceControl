@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Приложение организатора</string>
+    <string name="enter_title">Вход</string>
+    <string name="reg_title">Регистрация</string>
+</resources>

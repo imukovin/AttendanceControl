@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".ProgrammActivity">
+
+    <Button
+        android:id="@+id/scanWiFiBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="335dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/my_button"
+        android:text="Сканирование WiFi (Я здесь)"
+        android:textColor="@color/btnTextColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/listOfPoints"
+        android:layout_width="339dp"
+        android:layout_height="288dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="334dp"
+        android:layout_height="31dp"
+        android:text="Результат: "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/scanWiFiBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listOfPoints" />
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Id: "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Имя: "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Логин: "
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/otchet_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_button"
+            android:text="Отчет по посещению"
+            android:textColor="@color/btnTextColor"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dip">
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="291dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:padding="5dip"
+            android:background="@drawable/my_button"
+            android:text="Выход"
+            android:textColor="@color/btnTextColor"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

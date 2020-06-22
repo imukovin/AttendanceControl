@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Регистрация"
+        android:textColor="#010101"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="508dp"
+        android:ems="10"
+        android:hint="ФИО"
+        android:inputType="textCapWords" />
+
+    <com.github.pinball83.maskededittext.MaskedEditText
+        android:id="@+id/masked_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:hint="+7 (999) 999 99-99"
+        android:inputType="number"
+        app:mask="+7 (***) *** **-**"
+        app:maskIconColor="@color/colorPrimary"
+        app:notMaskedSymbol="*" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="508dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="508dp"
+        android:ems="10"
+        android:hint="Повторите пароль"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/my_button"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/btnTextColor"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/serverAnswerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_margin="5dp"
+        android:textColor="#030303"
+        android:textSize="18sp" />
+</LinearLayout>

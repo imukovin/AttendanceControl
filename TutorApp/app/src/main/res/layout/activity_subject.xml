@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".SubjectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/event_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text=""
+            android:textColor="#020202"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:maxLines="@android:integer/config_longAnimTime"
+            android:scrollbars="vertical"
+            android:text="Посетители: " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/onHotSpot"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/my_button"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="On HotSpot"
+                android:textColor="@color/btnTextColor"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/offHotSpot"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/my_button"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Off HotSpot"
+                android:textColor="@color/btnTextColor"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/send_client_btn"
+            android:layout_width="291dp"
+            android:layout_height="50dp"
+            android:background="@drawable/my_button"
+            android:text="Отправить список"
+            android:textColor="@color/btnTextColor"
+            android:textStyle="bold"/>
+
+        <!--<Button
+            android:id="@+id/scanBtn"
+            android:layout_width="291dp"
+            android:layout_height="50dp"
+            android:background="@drawable/my_button"
+            android:text="Button"
+            android:textColor="@color/btnTextColor"
+            android:textStyle="bold"/>-->
+
+        <TextView
+            android:id="@+id/hotspotInfoTextView"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="HotSpot Information" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Создание мероприятия"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/eventNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Название мероприятия"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/event_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:focusableInTouchMode="false"
+            android:ems="10"
+            android:hint="Дата проведения"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/event_time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:focusableInTouchMode="false"
+            android:ems="10"
+            android:hint="Время проведения"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/eventLocationEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Место проведения"
+            android:inputType="textCapWords" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Посетители мероприятия:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/visitors_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="multipleChoice" />
+
+        <Button
+            android:id="@+id/add_event_btn"
+            android:layout_width="291dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/my_button"
+            android:text="Добавить"
+            android:textColor="@color/btnTextColor"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
